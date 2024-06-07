@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Habit Tracker",
+  "version": "1.0",
+  "description": "tracker of habits",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/Tracked-48.png"
+    }
+  },
+  "icons": {
+    "48": "icons/Tracked-48.png"
+  },
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
